@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webcam.com/signup/loginpage</title>
+    <link rel="stylesheet" href="../othercsspages/signup.css">
+</head>
+
+<body>
+    <div id="signup-card">
+        <h1>SIGN UP</h1>
+        <form id="signUpForm">
+            <input type="text" placeholder="firstname" name="firstName">
+            <br><br>
+            <input type="text" placeholder="lastname" name="lastName">
+            <br><br>
+            <input type="text" placeholder="email" name="email">
+            <br><br>
+            <input type="password" placeholder="password" name="passWord">
+            <br><br>
+            <button type="submit" id="signUp">SIGN UP</button>
+            <br><br>
+            <span class="pp">Already have an account ? <button id="loginPage">LOG-IN</button></span>
+        </form>
+    </div>
+    <div id="login-card" class="loginCard">
+        <h1>PLEASE LOGIN</h1>
+        <form id="loginForm">
+            <input type="text" placeholder="email" name="email">
+            <input type="password" placeholder="password" name="passWord">
+            <button type="submit">LOGIN</button>
+            <span class="pp">Don't have an account? create an account <button id="signUpPage">SIGNUP</button></span>
+        </form>
+    </div>
+</body>
+<script>
+    // let signUp = document.getElementById('signUp');
+    // let loginPage = document.getElementById('loginPage');
+    // let login = document.getElementById('')
+    // <script>
+    // let signUp = document.getElementById('signUp');
+    // let loginPage = document.getElementById('loginPage');
+
+    signUp.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Simulate a successful sign-up process
+        let firstName = document.querySelector('input[name="firstName"]').value;
+        let lastName = document.querySelector('input[name="lastName"]').value;
+        let email = document.querySelector('input[name="email"]').value;
+        let password = document.querySelector('input[name="passWord"]').value;
+
+        if (firstName && lastName && email && password) {
+            // Redirect to the landing page
+            window.location.href = '/alreadysignedup.html'; // Replace 'landingPage.html' with your actual landing page URL
+        } else {
+            alert('Please fill out all fields.');
+        }
+    });
+</script>
+
+</script>
+</html>
