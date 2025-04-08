@@ -1,196 +1,208 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Sign Up / Log In</title>
-    
+
     <style>
-    
         * {
-    
+
             margin: 0;
-    
+
             padding: 0;
-    
+
             box-sizing: border-box;
-    
+
             border: none;
-    
+
         }
-    
-    
-    
+
+        body {
+            background-image: url(./images/ChatGPT\ Image\ Apr\ 8\,\ 2025\,\ 05_49_10\ PM.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
         .container {
-    
+
             object-fit: contain;
-    
+
             width: 400px;
-    
+
             height: 450px;
-    
-            background-color: palegoldenrod;
-    
+
+            background-color: #080a09;
+
             margin: auto;
-    
+
             margin-top: 100px;
-    
+
             border-radius: 20px;
-    
+
             display: flex;
-    
+
             flex-direction: column;
-    
+
             justify-content: center;
-    
+
             align-items: center;
-    
+
         }
-    
-    
-    
-        h1, h3 {
-    
+
+
+
+        h1,
+        h3 {
+
             text-align: center;
-    
+
             color: burlywood;
-    
+
         }
-    
-    
-    
+
+
+
         input {
-    
+
             width: 80%;
-    
+
             padding: 10px;
-    
+
             margin: 10px 0;
-    
+
             border-radius: 10px;
-    
+
             margin-left: 40px;
-    
+
         }
-    
-    
-    
+
+
+
         .btn {
-    
-            background-color: teal;
-    
+
+            background-color: black;
+
             color: white;
-    
+
             padding: 10px 15px;
-    
+
             border-radius: 5px;
-    
+
             margin-left: 150px;
-    
+
         }
-    
-    
-    
+
+
+
         .btn:hover {
-    
+
             cursor: pointer;
-    
+
             background-color: turquoise;
-    
+
         }
-    
-    
-    
-        .login, .signup {
-    
+
+
+
+        .login,
+        .signup {
+
             text-align: center;
-    
+            color: antiquewhite;
         }
-    
-    
-    
-        .btnn{
-    
+
+
+
+        .btnn {
+
             border-radius: 20%;
-    
             padding: 10px 15px;
-    
+
         }
-    
-    
-    
-        .btnn:hover{
-    
+
+
+
+        .btnn:hover {
+
             cursor: pointer;
-    
+
             background-color: gray;
-    
+
         }
-    
-    
-    
+
+
+
         .hidden {
-    
+
             display: none;
-    
+
         }
-    
     </style>
-    
-    </head><body><div class="container" id="signupContainer">
-    
+
+</head>
+
+<body>
+    <div class="container" id="signupContainer">
+
         <h1>Sign Up</h1>
-    
+
         <form id="signupForm">
-    
+
             <input type="text" id="firstInp" placeholder="First Name" required>
-    
+
             <input type="text" id="lastInp" placeholder="Last Name" required>
-    
+
             <input type="email" id="emailInp" placeholder="Email" required>
-    
+
             <input type="password" id="passwordInp" placeholder="Password" required>
-    
+
             <input type="password" id="confirmPasswordInp" placeholder="Confirm Password" required>
-    
+
             <button type="submit" class="btn">Sign Up</button>
-    
+
         </form>
-    
+
         <div class="login">
-    
+
             Already have an account? <button class="btnn" onclick="showLogin()">Log In</button>
-    
+
         </div>
-    
+
     </div>
-    
-    
-    
+
+
+
     <div class="container hidden" id="loginContainer">
-    
+
         <h3>Log In</h3>
-    
+
         <h6>Please log in to continue</h6>
-    
+
         <form id="loginForm">
-    
+
             <input type="email" id="loginEmail" placeholder="Email Address" required>
-    
+
             <input type="password" id="loginPassword" placeholder="Password" required>
-    
+
             <button type="submit" class="btn">Log In</button>
-    
+
         </form>
-    
+
         <div class="signup">
-    
+
             Don't have an account? <button class="btnn" onclick="showSignup()">Sign Up</button>
-    
+
         </div>
     </div>
-    
-    
-   <script src="../signup.js"></script>>
-    
-    </body></html>
-    
+
+
+    <script src="../signup.js"></script>>
+
+</body>
+
+</html>
